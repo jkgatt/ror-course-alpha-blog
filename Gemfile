@@ -8,8 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
-# Using sqlite as a database
-gem 'sqlite3'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -50,8 +49,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
-
   gem 'rails_12factor'
 end
 
