@@ -38,6 +38,13 @@ class ArticlesController < ApplicationController
 		end
 	end
 
+	def destroy
+		@article = Article.find(params[:id])
+		@article.destroy
+		flash[:notice] = "Article was sucessfully deleted/destroyed"
+		redirect_to articles_path
+	end
+
 	private
 		# Requires the article param object and permits the data into the object
 		def article_params
