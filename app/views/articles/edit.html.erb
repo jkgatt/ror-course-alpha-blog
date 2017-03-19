@@ -1,4 +1,4 @@
-<h1>Create an Article</h1>
+<h1>Editing the selected article</h1>
 
 <% if @article.errors.any? %>
 	<h2>Errors while creating the article:</h2>
@@ -24,4 +24,10 @@
 	</p>
 <% end %>
 
-<%= link_to 'Back to list all articles', articles_path %>
+<p>
+	<%= link_to 'Show this Article', article_path(@article.id) %>
+</p>
+
+<p>
+	<%= link_to 'Back to list all articles', articles_path %>
+</p>
