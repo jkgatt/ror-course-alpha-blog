@@ -1,0 +1,67 @@
+$navbar-default-bg: black;
+
+#logo{
+	float: left;
+	font-size: 1.7em;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+#logo:hover {
+}
+
+
+.center {
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: asset-url('jumbotron-image.png');
+	background-size: cover;
+	height: 600px;
+}
+
+#jumbotron_header{
+	color: #FFF;
+	text-align: center;
+	margin-bottom: 30px;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+#sign_up_button{
+	font-size: 1.7em;
+	border: none;
+	background-color: black;
+}
+
+#sign_up_button:hover{
+	background-color: red;
+}
+
+footer {
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #777; 
+}
+
+footer a:hover{
+	color: #222;
+}
+
+footer small {
+	float: left;
+}
+
+footer ul {
+	float:right;
+	list-style: none
+}
+
+footer ul li{
+	float: left;
+	margin-left: 25px;
+}

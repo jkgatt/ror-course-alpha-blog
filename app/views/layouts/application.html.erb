@@ -9,7 +9,11 @@
   </head>
 
   <body>
+    <%= render 'layouts/navigation_bar' %>
   	<%= render 'layouts/flash_messages' %>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
