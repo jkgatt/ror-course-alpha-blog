@@ -12,8 +12,10 @@ class ArticlesController < ApplicationController
 
 	def create
 		# render plain: params[:article].inspect
-
 		@article = Article.new(article_params)
+
+		# Quick fix just for now!
+		@article.user= User.first
 		if @article.save
 			#Flashes a message, saved for just once
 			flash[:success] = "The article was successfully created"
