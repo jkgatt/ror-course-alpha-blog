@@ -1,0 +1,5 @@
+<h1 class="text_center">All Alpha Bloggers</h1>
+
+<% @users.each do |user| %>
+	<%= render 'user_info', obj: user %>
+<% end %>

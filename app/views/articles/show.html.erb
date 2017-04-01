@@ -1,6 +1,10 @@
 <h2 class='text-center'>Title: <%= @article.title %></h2>
 
 <div class='well col-xs-8 col-xs-offset-2'>
+	<% if @article.user %>
+		<h3 class='text-center'>Created By:</h3>
+		<%= render 'users/user_info', obj: @article.user%>
+	<% end %>
 	<h4 class='center description'><strong>Description:</strong></h4>
 	<hr>
 	<%= simple_format(@article.description) %>
