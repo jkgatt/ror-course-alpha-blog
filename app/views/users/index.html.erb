@@ -3,3 +3,6 @@
 <% @users.each do |user| %>
 	<%= render 'user_info', obj: user %>
 <% end %>
+<div class='text-center'>
+	<%= will_paginate %>
+</div>

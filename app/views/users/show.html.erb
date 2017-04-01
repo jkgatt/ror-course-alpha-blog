@@ -8,4 +8,8 @@
 
 <h4 class="text_center"><%= @user.username %>'s articles</h4>
 
-<%= render 'articles/article', articles: @user.articles %>
+<%= render 'articles/article', articles: @user_articles %>
+
+<div class="text_center">
+	<%= will_paginate @user_articles %>
+</div>
