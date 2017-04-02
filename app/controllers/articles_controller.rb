@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
 		# render plain: params[:article].inspect
 		@article = Article.new(article_params)
 
-		@article = current_user
+		@article.user = current_user
 		if @article.save
 			#Flashes a message, saved for just once
 			flash[:success] = "The article was successfully created"
