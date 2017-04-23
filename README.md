@@ -1,24 +1,3 @@
-# README
+This is a blog application created while following The Complete Ruby on Rails Developer course on Udemy (https://www.udemy.com/the-complete-ruby-on-rails-developer-course).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Check out the working finance tracker application over here: https://ror-alpha-blog-jeangatt.herokuapp.com
